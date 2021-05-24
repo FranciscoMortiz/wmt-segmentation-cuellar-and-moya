@@ -81,6 +81,6 @@ import shutil
 for im in tract_mask:
     name =im.name
     case=im.parent.name
-    dirp ="/home/fjmoya/FinalProject/wm-segmentation/WMTdata/Annotations"
+    dirp ="WMTdata/Annotations"
     out = Path(dirp,case+name)
     shutil.copyfile(im, out)
